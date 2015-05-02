@@ -115,7 +115,6 @@ def updateBot():
 	Sl = robolspeed * DSPEED
 	
 	if abs(Sl-Sr) < 0.000001:
-		print(str(Sl*math.cos(roboangle)))
 		nx = robopos[0]*PIXPERMETER -Sl*math.sin(roboangle)
 		ny = robopos[1]*PIXPERMETER -Sl*math.cos(roboangle)
 		na = roboangle
